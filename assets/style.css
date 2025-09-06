@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    
+    background: url(images/pexels-pixabay-158827\ \(1\).jpg) ;
+    background-size:cover; 
+    font-family: "Domine", serif;
+    color: #183B4E;
+    font-size: 15px;
+
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.box{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1px);
+    color: #000;
+    width: 600px;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.photo{
+    width: 56px;
+}
+.city{
+    width: 100%;
+    background: transparent; 
+    border: 2px solid  #4e778b;
+    padding: 10px;
+    border-radius: 10px;
+    color: #183B4E;
+    font-size:20px;
+    font-weight: 600;
+    font-family: "Domine", serif;
+}
+
+.cloud{
+    width: 180px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    font-family: "Domine", serif;
+}
+.time{
+    font-size: 20px;
+}
+.number{
+    font-size: 72px;
+    color: #fff;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer{
+    font-family: "Domine", serif;
+    color: #183B4E;
+}

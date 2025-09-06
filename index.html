@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body>
+    
+<div id="app">
+<div class="page">
+
+    <div class="box p-5">
+        
+    <div class="select">
+        <select  class="city  mb-3" v-model="city" @change="callApi">
+            <option v-for="il in cityList" :key="il.id" :value="il.name">{{il.name}}</option>
+            
+        </select>
+   <img class="photo ms-2" src="assets/images/map-pin kopyası.png" alt="">
+    </div>
+    <div class="row m-4">
+       <div class="col-md-6">
+<img class="cloud" src="assets/images/cloudy-day_1779765.png" alt="">
+       </div>
+       
+       <div class="col-md-6 content ">
+        <h3>{{name}}</h3>
+        <p class="number">{{temp_c}}&#8451;</p>
+        <h6 class="time">{{time}}</h6>
+       </div>
+    </div>
+        <div class="footer mt-4" >
+            <div class="row d_flex mb-4" >
+        <div class="col-md-3"><img :src="icon"></div>
+        <div class="col-md-3"><i class="fa-solid fa-wind"></i> {{wind_kph}}km/s</div>
+        <div class="col-md-3"><i class="fa-solid fa-droplet text-info"></i> {{humidity}}%</div>
+    </div>
+    <div class="row d_flex">
+        <div class="col-md-3"><i class="fa-solid fa-sun"></i> {{uv}}</div>
+        <div class="col-md-3"><i class="fa-solid fa-cloud text-info-emphasis"></i> {{cloud}}%</div>
+        <div class="col-md-3"><i class="fa-solid fa-eye"></i> {{vis_km}}km</div>
+    </div>
+    </div>
+    
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
