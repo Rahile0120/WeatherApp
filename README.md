@@ -16,13 +16,16 @@ Uygulama, sıcaklık, rüzgar hızı, nem, bulutluluk, UV indeksi ve görüş me
 * Responsive tasarım: mobil ve masaüstü uyumlu
 
 ###  🖼️ Ekran Görüntüsü
-(screenshot.png)
-
-### 🎞️ Demo (GIF)
-(weather_app.gif)
+![App Screenshot](screenshot.png)
 
 ### 🔗 Canlı Demo
 (https://rahile0120.github.io/WeatherApp/)
+
+
+### 🎞️ Demo (GIF)
+![App Demo](weather_app.gif)
+
+
 
 ### ⚙️ Kullanılan Teknolojiler
 
